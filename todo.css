@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+
+body{
+    position:relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: palevioletred;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    color:palevioletred ;
+}
+
+header .input-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.input-section input {
+    margin-right: 20px;
+    max-width: 100%;
+}
+
+.input {
+    border-radius: 1rem;
+    height: 3rem;
+    border-width: 2px black solid;
+    padding: 0rem 1rem;
+    font-size: 1.2rem;
+   
+}
+
+.todos-filter, .filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.filters {
+  margin-top: 100px;
+}
+
+
+.todos-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100%;
+    max-height: 100vh;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.todos-list .todo-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.todo-item{
+      background-color: pink;
+      border-radius: 12px;
+      margin-bottom: 5px;
+}
+
+.todo-item .todo-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+}
+
+.todo-actions button:not(:last-child){
+    margin-right: 10px;
+}
+
+.btn{
+    cursor: pointer;
+    text-align: center;
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: palevioletred;
+    color: white;
+}
+
+.btn:hover{
+    background-color: white;
+    color: palevioletred;
+}
+
+
+.btn-add{
+    background-color: palevioletred;
+    color: white;
+}
+.btn-add:hover{
+    background-color: white;
+    color:palevioletred;
+}
+
+.btn-success{
+    opacity: 1;
+    background-color:palevioletred;
+    color: white
+}
+
+.btn-success:hover{
+    background-color: white;
+    color: palevioletred;
+}
+
+.btn-error{
+    opacity: 1;
+    background-color:palevioletred;
+    color: white
+}
+.btn-error:hover{
+    background-color: white;
+    color: palevioletred;
+}
+
+.dropbtn {
+    background-color: palevioletred;
+    color: white;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: palevioletred;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: white;
+    color:palevioletred;
+
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: white;
+    color: palevioletred;
+  }
+
+@media only screen and (max-width: 530px) {
+    .container {
+        margin: 20px;
+        max-width: 96%;
+        min-width: 96%;
+    }
+}
